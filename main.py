@@ -62,6 +62,9 @@ def MyPasswords():
     else:
         with open(filename, "w") as file:
             pass
+
+    textpasswords = tk.Label(window, text="Note: To delete password must delete password in .txt and save a file")
+    textpasswords.pack(pady=10)
     
     mainmenubutton = tk.Button(window, text="Main Menu",command=Main, height=5, width=50)
     mainmenubutton.pack()
